@@ -1,0 +1,16 @@
+{
+  "name": "artillery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "artillery": "artillery",
+    "runAndReportFib": "artillery run -o fib.$CPU.result.json fib.yaml && artillery report fib.$CPU.result.json",
+    "runAndReportDelay": "artillery run -o delay.$CPU.result.json delay.yaml && artillery report delay.$CPU.result.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "artillery": "^1.6.1"
+  }
+}

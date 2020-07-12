@@ -1,0 +1,11 @@
+config:
+  target: 'http://CdkSt-LoadA-VSRZXW757I04-251602783.eu-west-2.elb.amazonaws.com'
+  phases:
+    - duration: 240
+      arrivalRate: 1
+      rampTo: 40
+scenarios:
+  - name: delay
+    flow:
+      - get:
+          url: "/{{ $processEnvironment.CPU }}/delay/100"
