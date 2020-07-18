@@ -1,10 +1,11 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const os = require('os');
 
 router.get('/delay/:time', function (req, res, next) {
 
     setTimeout(() => {
-        res.send({time: req.params.time});
+        res.send({time: req.params.time, hostname: os.hostname()});
     }, req.params.time)
 
 });
