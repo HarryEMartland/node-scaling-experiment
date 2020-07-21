@@ -26,5 +26,5 @@ Echos back the body sent.
 ```
 yarn
 docker build --tag=harrymartland/node-load-app .
-docker push harrymartland/node-load-app```
+docker push harrymartland/node-load-app
 ```
