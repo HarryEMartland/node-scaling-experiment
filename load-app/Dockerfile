@@ -6,4 +6,4 @@ COPY ./ /app
 
 WORKDIR /app
 
-ENTRYPOINT ["yarn","start"]
+ENTRYPOINT ["node","bin/www"]
